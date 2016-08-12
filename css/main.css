@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600|Muli:400,300);
+.site-wrapper {
+  letter-spacing: 2px;
+}
+
+.site-wrapper .cover-container {
+  margin: 250px auto 100px auto;
+}
+
+.site-wrapper .cover-container .cover-heading {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 3rem;
+}
+
+.site-wrapper .cover-container .btn-default {
+  font-family: "Muli", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #FFF;
+  background-color: transparent;
+  border: 1px solid #FFF;
+  border-radius: 0;
+}
+
+.site-wrapper .nav .inner {
+  padding: 0;
+}
+
+.site-wrapper .nav .inner .navbar {
+  border-radius: 0;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.site-wrapper .nav .inner .navbar-default {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 0;
+}
+
+.site-wrapper .nav .inner .navbar-default .navbar-nav {
+  float: none;
+}
+
+.site-wrapper .nav .inner .navbar-default .navbar-nav > li {
+  float: none;
+  display: inline-block;
+  *display: inline;
+  /* ie7 fix */
+  *zoom: 1;
+  /* hasLayout ie7 trigger */
+  vertical-align: top;
+}
+
+.site-wrapper .nav .inner .navbar-default .navbar-nav > li > a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: #B92E2F;
+}
+
+.site-wrapper .section1 {
+  color: #FFF;
+  background-color: rgba(183, 73, 69, 0.8);
+  width: 100%;
+}
+
+.site-wrapper .section1 .container {
+  line-height: 2.5;
+  padding: 50px 0;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.site-wrapper .section1 .container h4 {
+  margin-bottom: 20px;
+  font-family: "Muli", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.site-wrapper .section1 .container p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
