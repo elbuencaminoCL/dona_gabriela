@@ -64,7 +64,34 @@ $muli: 'Muli', sans-serif;
 			margin:0 auto;
 			width:70%;
 			h4{
-				margin-bottom: 20px;
+				width: 25%;
+				padding: 0 0 10px 0;
+				border-bottom: 1px solid #FFF;
+				margin: 20px auto;
+				font-family: $muli;
+				font-weight: 400;
+				text-transform: uppercase;
+			}
+			p{
+				font-family: $raleway;
+				font-weight: 500;
+			}
+		}
+	}
+	.section2{
+		color: #000;
+		background-color: #FFF;
+		width: 100%;
+		.container{
+			line-height: 2.5;
+			padding: 50px 0;
+			margin:0 auto;
+			width:70%;
+			h4{
+				width: 25%;
+				padding: 0 0 10px 0;
+				border-bottom: 1px solid #000;
+				margin: 20px auto;
 				font-family: $muli;
 				font-weight: 400;
 				text-transform: uppercase;
