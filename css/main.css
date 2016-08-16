@@ -222,18 +222,23 @@
   text-transform: uppercase;
 }
 
-.site-wrapper footer {
+.site-wrapper footer.row {
+  margin-left: 0;
   padding: 30px;
   width: 100%;
   background-color: #91262A;
 }
 
-.site-wrapper footer .col-md-6 {
+.site-wrapper footer.row .col-md-6 {
   text-align: right;
   color: #FFF;
 }
 
-.site-wrapper footer .col-md-6 p {
+.site-wrapper footer.row .col-md-6 p {
   color: #FFF;
   margin: 0;
+}
+
+.site-wrapper footer.row .col-md-6 img {
+  float: left;
 }
