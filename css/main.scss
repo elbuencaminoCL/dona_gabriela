@@ -102,6 +102,31 @@ $muli: 'Muli', sans-serif;
 			}
 			.col-sm-6,.col-md-6,.col-lg-6{
 				padding: 0;
+				img.foto-75{
+						-webkit-filter: blur(3px);
+		  				-moz-filter: blur(3px);
+		  				-o-filter: blur(3px);
+		  				-ms-filter: blur(3px);
+		  				filter: blur(3px);
+				}
+				.captions{
+					position: absolute;
+					top:30%;
+					left:30%;
+					margin: 0 auto;
+					width: 40%;
+					border-bottom: 1px solid #000;
+					h6{
+						font-family: $muli;
+						font-weight: 300;
+						font-size: 2rem;
+					}
+					h5{
+						font-family: $muli;
+						font-weight: 300;
+						font-size: 4rem;
+					}
+				}
 				h6{
 					font-family: $raleway;
 					font-weight: 600;
@@ -136,12 +161,16 @@ $muli: 'Muli', sans-serif;
 						margin-bottom: 25px;
 
 					}
+					
 					ul{
 						text-align: left;
 						padding: 0;
 						li{
 							float:none;
 							display: inline-block;
+							img{
+								filter:none;
+							}
 						}
 					}
 				}
@@ -152,11 +181,13 @@ $muli: 'Muli', sans-serif;
 		width: 100%;
 		background:url(../img/fondosection3.jpg);
 		color: #000;
+		z-index: 1;
 		.container{
 			line-height: 2.5;
 			padding: 50px 0;
 			margin:0 auto;
 			width:70%;
+			z-index: 999;
 			.col-md-12,.col-md-12{
 				font-family: $muli;
 				font-weight: 400;

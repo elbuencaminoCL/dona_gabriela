@@ -119,6 +119,35 @@
   padding: 0;
 }
 
+.site-wrapper .section2 .container .col-sm-6 img.foto-75, .site-wrapper .section2 .container .col-md-6 img.foto-75, .site-wrapper .section2 .container .col-lg-6 img.foto-75 {
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+}
+
+.site-wrapper .section2 .container .col-sm-6 .captions, .site-wrapper .section2 .container .col-md-6 .captions, .site-wrapper .section2 .container .col-lg-6 .captions {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  margin: 0 auto;
+  width: 40%;
+  border-bottom: 1px solid #000;
+}
+
+.site-wrapper .section2 .container .col-sm-6 .captions h6, .site-wrapper .section2 .container .col-md-6 .captions h6, .site-wrapper .section2 .container .col-lg-6 .captions h6 {
+  font-family: "Muli", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.site-wrapper .section2 .container .col-sm-6 .captions h5, .site-wrapper .section2 .container .col-md-6 .captions h5, .site-wrapper .section2 .container .col-lg-6 .captions h5 {
+  font-family: "Muli", sans-serif;
+  font-weight: 300;
+  font-size: 4rem;
+}
+
 .site-wrapper .section2 .container .col-sm-6 h6, .site-wrapper .section2 .container .col-md-6 h6, .site-wrapper .section2 .container .col-lg-6 h6 {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -169,10 +198,15 @@
   display: inline-block;
 }
 
+.site-wrapper .section2 .container .col-sm-6 .depto75 ul li img, .site-wrapper .section2 .container .col-md-6 .depto75 ul li img, .site-wrapper .section2 .container .col-lg-6 .depto75 ul li img {
+  filter: none;
+}
+
 .site-wrapper .section3 {
   width: 100%;
   background: url(../img/fondosection3.jpg);
   color: #000;
+  z-index: 1;
 }
 
 .site-wrapper .section3 .container {
@@ -180,6 +214,7 @@
   padding: 50px 0;
   margin: 0 auto;
   width: 70%;
+  z-index: 999;
 }
 
 .site-wrapper .section3 .container .col-md-12, .site-wrapper .section3 .container .col-md-12 {
