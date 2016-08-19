@@ -121,6 +121,7 @@
 }
 
 .site-wrapper .section2 .container .col-sm-6, .site-wrapper .section2 .container .col-md-6, .site-wrapper .section2 .container .col-lg-6 {
+  overflow: hidden;
   padding: 0;
 }
 
