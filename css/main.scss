@@ -108,6 +108,12 @@ $muli: 'Muli', sans-serif;
 		  				-o-filter: blur(3px);
 		  				-ms-filter: blur(3px);
 		  				filter: blur(3px);
+		  				-webkit-transition: .3s ease-in-out;
+						transition: .3s ease-in-out;
+						&:hover{
+							-webkit-filter: blur(0);
+							filter: blur(0);
+						}
 				}
 				.captions{
 					position: absolute;
@@ -240,5 +246,44 @@ $muli: 'Muli', sans-serif;
 				float: left;
 			}
 		}
+	}
+}
+.contact-wrapper{
+	background:url(../img/bg-contacto.jpg) center top no-repeat;
+  	display: table;
+  	width: 100%;
+  	height: 100%; /* For at least Firefox */
+  	min-height: 100%;
+  	-webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+    box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+    .container{
+    	text-align: left;
+    	h1{
+    		font-family: $muli;
+    		text-align: center;
+    		margin-bottom: 50px;
+    	}
+	    input,textarea{
+	    	font-family: $raleway;
+	    	display: block;
+	    	margin-bottom: 20px;
+	    	width: 80%;
+	    	padding:7px;
+	    	border-radius: 4px;
+	    }
+	    p{
+	    	font-family: $raleway;
+	    	font-weight: 600;
+	    }
+	    .btn-block{
+	    	width: auto;
+	    }
+	    .footer{
+	    	margin-top: 50px;
+	    	text-align: center;
+	    	img{
+	    		margin:10px;
+	    	}
+	    }
 	}
 }
