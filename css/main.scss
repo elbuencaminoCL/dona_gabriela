@@ -157,15 +157,26 @@ $breakpoint-smartphone: 375px;
 					margin: 0 auto;
 					width: 40%;
 					border-bottom: 1px solid #000;
+					@media screen and (max-width: $breakpoint-smartphone) {
+						top:20%;
+						left: 25%;
+					}
 					h6{
 						font-family: $muli;
 						font-weight: 300;
 						font-size: 2rem;
+						@media screen and (max-width: $breakpoint-smartphone) {
+							 font-size: 1rem;
+							 margin-left: 0;
+			  			}
 					}
 					h5{
 						font-family: $muli;
 						font-weight: 300;
 						font-size: 4rem;
+						@media screen and (max-width: $breakpoint-smartphone) {
+							 font-size: 2rem;
+			  			}
 					}
 				}
 				h6{
@@ -304,7 +315,11 @@ $breakpoint-smartphone: 375px;
 				margin:0;
 			}
 			img{
+				margin: 5px auto;
 				float: left;
+				@media screen and (max-width: $breakpoint-smartphone) {
+				    width: 100%;
+  				}
 			}
 		}
 	}
@@ -335,6 +350,9 @@ $breakpoint-smartphone: 375px;
 	    	width: 80%;
 	    	padding:7px;
 	    	border-radius: 4px;
+	    	@media screen and (max-width: $breakpoint-smartphone) {
+	    		width: 100%
+	    	}
 	    }
 	    p{
 	    	font-family: $raleway;
@@ -346,10 +364,18 @@ $breakpoint-smartphone: 375px;
 	    .footer{
 	    	margin-top: 50px;
 	    	text-align: center;
+	    	@media screen and (max-width: $breakpoint-smartphone) {
+	    		margin-top: 20px;
+	    	}
 	    	img{
 	    		margin:10px;
 	    	}
 	    }
+	}
+	.col-md-4{
+		@media screen and (max-width: $breakpoint-smartphone) {
+			margin-top: 20px;
+		}
 	}
 }
 .enfoque{
