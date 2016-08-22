@@ -8,10 +8,14 @@
 }
 
 .site-wrapper .cover-container .cover-heading {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   line-height: 1.7;
   font-size: 3.5rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  -moz-text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  -webkit-text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .site-wrapper .cover-container .lead {
@@ -27,6 +31,10 @@
   border: 1px solid #FFF;
   border-radius: 0;
   padding: 10px 35px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  -moz-text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  -webkit-text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .site-wrapper .nav .inner {
@@ -87,6 +95,12 @@
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 375px) {
+  .site-wrapper .section1 .container h4 {
+    width: 90%;
+  }
+}
+
 .site-wrapper .section1 .container p {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -113,6 +127,12 @@
   font-family: "Muli", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 375px) {
+  .site-wrapper .section2 .container h4 {
+    width: 90%;
+  }
 }
 
 .site-wrapper .section2 .container p {
@@ -195,6 +215,16 @@
   margin-right: 5px;
 }
 
+.site-wrapper .section2 .container .col-sm-6 a#btn-ver, .site-wrapper .section2 .container .col-md-6 a#btn-ver, .site-wrapper .section2 .container .col-lg-6 a#btn-ver {
+  font-size: 1.1rem;
+  font-family: "Muli", sans-serif;
+  font-weight: 500;
+  color: #B92E2F;
+  padding: 8px 35px;
+  border: 1px solid #B92E2F;
+  border-radius: 0;
+}
+
 .site-wrapper .section2 .container .col-sm-6 a.btn, .site-wrapper .section2 .container .col-md-6 a.btn, .site-wrapper .section2 .container .col-lg-6 a.btn {
   font-size: 1.1rem;
   font-family: "Muli", sans-serif;
@@ -251,6 +281,14 @@
   z-index: 999;
 }
 
+@media screen and (max-width: 375px) {
+  .site-wrapper .section3 .container {
+    padding: 25px 0;
+    line-height: 2.3;
+    width: 90%;
+  }
+}
+
 .site-wrapper .section3 .container .col-md-12, .site-wrapper .section3 .container .col-md-12 {
   font-family: "Muli", sans-serif;
   font-weight: 400;
@@ -289,6 +327,12 @@
   font-family: "Muli", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 375px) {
+  .site-wrapper .section4 .container h4 {
+    width: 90%;
+  }
 }
 
 .site-wrapper footer.row {
@@ -362,4 +406,11 @@
 
 .contact-wrapper .container .footer img {
   margin: 10px;
+}
+
+.enfoque {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }

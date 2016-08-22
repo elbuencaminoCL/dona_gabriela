@@ -28,7 +28,7 @@
       <div class="site-wrapper-inner">
         <h3 class="masthead-brand"><img src="img/rectangle-12.jpg"></h3>
         <div class="cover-container">
-          <div class="inner cover">
+          <div class="inner cover" id="int-cover">
             <h1 class="cover-heading">DEPARTAMENTOS EXCLUSIVOS <br> PARA ARRIENDO <br> EN EL CENTRO DE VICUÑA</h1>
             <p class="lead">
               <a href="#section2" class="btn btn-lg btn-default">VER DEPARTAMENTOS</a>
@@ -96,20 +96,20 @@
             <div class="col-md-12 col-md-12">
               <h4>Departamentos</h4>
               <p>
-                Contamos con amplios departamentos para arriendo, amoblados y para amobladar dependiendo de sus necesidades.</br>
+                Contamos con amplios departamentos para arriendo y para amobladar </br>dependiendo de sus necesidades.</br>
                 Valores desde $ 270.000.
               </p>
             </div>   
           </div>
           <div class="row container" >
             <div class="col-md-6 col-lg-6 col-sm-6">
-              <a title="Image 1" href="#section2">
-              <img class="foto-75 " src="img/dptos75.jpg" id="image-1" width="100%">
+              <a title="Image 1" href="#section2" id="75mts">
+                <img class="foto-75" src="img/dptos75.jpg" id="image-1" width="100%">
               </a>
-              <div class="captions">
-                <h6 class="foto-cap">DEPARTAMENTOS</h6>
-                <h5 class="foto-cap">75 MTS2</h5>
-              </div>
+                <div class="captions">
+                  <h6 class="foto-cap">DEPARTAMENTOS</h6>
+                  <h5 class="foto-cap">75 MTS2</h5>
+                </div>
               </div>
             <div class="col-md-6 col-lg-6 col-sm-6">
               <div class="depto75">
@@ -121,16 +121,20 @@
                 </ul>
               </div>
               <h6>Características Principales</h6>
-              <ul>
+                <ul>
                   <li><span class="ion-ios-arrow-right"></span>Dormitorio principal cuenta con Baño privado y Ducha Shower Door y los artefactos son marca Wasser, otorgándole un diseño vanguardista, Walking Closet. conexión de TV cable.</li>
                   <li><span class="ion-ios-arrow-right"></span>Dormitorio 2: cuenta con Closet y conexión de TV cable.</li>
                   <li><span class="ion-ios-arrow-right"></span>Dormitorio 3: cuenta con Closet y conexión de TV cable.</li>
+                </ul>
+                <div id="detalles-75" style="display:none">
+                <ul>
                   <li><span class="ion-ios-arrow-right"></span>Baño 2 : Ducha Shower Door y los artefactos son marca Wasser, otorgándole un diseño vanguardista</li>
                   <li><span class="ion-ios-arrow-right"></span>Living comedor: Un espacio bastante amplio. Para realizar sus sueños.</li>
                   <li><span class="ion-ios-arrow-right"></span>Cocina con logia : Bastante amplia. Con cubiertas en granito.</li>
                   <li><span class="ion-ios-arrow-right"></span>Terraza.</li>
-              </ul>
-              <a class="btn" href="#">VER MÁS DETALLES</a>
+                </ul>
+              </div>
+              <a class="btn" id ="btn-ver75" href="#">VER MÁS DETALLES</a>
             </div>
           </div>
           <div class="row container">
@@ -149,12 +153,16 @@
                   <li><span class="ion-ios-arrow-right"></span>Amplio Dormitorio principal cuenta con Baño privado y Ducha Shower Door y los artefactos son marca Wasser, otorgándole un diseño vanguardista, Walking Closet. conexión de TV cable.</li>
                   <li><span class="ion-ios-arrow-right"></span>Dormitorio 2: cuenta con Closet y conexión de TV cable.</li>
                   <li><span class="ion-ios-arrow-right"></span>Dormitorio 3: Baño privado</li>
-                  <li><span class="ion-ios-arrow-right"></span>Baño 2 : Ducha Shower Door y los artefactos son marca Wasser, otorgándole un diseño vanguardista</li>
-                  <li><span class="ion-ios-arrow-right"></span>Living comedor: Un espacio bastante ampliio. En doble altura para realizar sus sueños.</li>
-                  <li><span class="ion-ios-arrow-right"></span>Cocina con logia : Bastante amplia. Con cubiertas en granito.</li>
-                  <li><span class="ion-ios-arrow-right"></span><strong>Terraza. que cuenta con un SPA ( Tina de Hidromasaje). Ideal para Relajarse con una vista espléndida al valle del Elqui.</strong></li>
                 </ul>
-                <a href="#">VER MÁS DETALLES</a>
+                <div id="detalles-200" style="display:none">
+                  <ul>  
+                    <li><span class="ion-ios-arrow-right"></span>Baño 2 : Ducha Shower Door y los artefactos son marca Wasser, otorgándole un diseño vanguardista</li>
+                    <li><span class="ion-ios-arrow-right"></span>Living comedor: Un espacio bastante ampliio. En doble altura para realizar sus sueños.</li>
+                    <li><span class="ion-ios-arrow-right"></span>Cocina con logia : Bastante amplia. Con cubiertas en granito.</li>
+                    <li><span class="ion-ios-arrow-right"></span><strong>Terraza. que cuenta con un SPA ( Tina de Hidromasaje). Ideal para Relajarse con una vista espléndida al valle del Elqui.</strong></li>
+                  </ul>
+                </div>
+                <a href="#" id="btn-ver">VER MÁS DETALLES</a>
             </div>
             <div class="col-md-6 col-lg-6 col-sm-6">
               <a title="Image 2" href="#section2">
@@ -211,7 +219,7 @@
                           </div>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button class="btn btn-default" data-dismiss="modal">Cerrar</button>
                         </div>
                       </div>
                     </div>
@@ -238,7 +246,7 @@
               <p>
                 El Condominio está ubicado en Av. Las Delicias 80, a pasos del centro en la ciudad de Vicuña. 
               </p>
-              <img src="img/mapa-condominio.jpg">
+              <img class="img-responsive" src="img/mapa-condominio.jpg">
             </div>   
           </div>
         </div>
@@ -260,9 +268,10 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript">
-      $(document).ready(function() {
+    $(document).ready(function() {
         
        /* activate the carousel */
        $("#modal-carousel").carousel({interval:false});
@@ -295,8 +304,51 @@
         // show the modal
         $("#modal-gallery").modal("show");
       });
-
+      
+      // jQuery
+      $( "#btn-ver" ).click(function() {
+        event.preventDefault();
+        $( "#detalles-200" ).toggle( "slow", function() {
+        });
+      });
+      $( "#btn-ver75" ).click(function() {
+        event.preventDefault();
+        $( "#detalles-75" ).toggle( "slow", function() {
+        });
+      });
     });
     </script>
+    <script type="text/javascript">
+
+function goToByScroll(id) {
+    $('html,body').animate({
+        scrollTop: $(id).offset().top
+    },'1000');
+}
+
+$("#bs-example-navbar-collapse-1 > ul > li > a").click(function (e) {
+    // Prevent a page reload when a link is pressed
+    e.preventDefault();
+    // Call the scroll function
+    goToByScroll($(this).attr("href"));
+});
+$("#int-cover a").click(function (e) {
+    // Prevent a page reload when a link is pressed
+    e.preventDefault();
+    // Call the scroll function
+    goToByScroll($(this).attr("href"));
+});
+</script>
+<script>
+$(document).ready(function() {
+  $( ".captions" ).hover(
+  function() {
+    $( "#image-1" ).addClass( "enfoque");
+  }, function() {
+    $( "#image-1" ).removeClass( "enfoque" );
+  }
+);
+});
+</script>
   </body>
 </html>
