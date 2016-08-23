@@ -113,6 +113,10 @@ $breakpoint-smartphone-max: 460px;
 			padding: 50px 0;
 			margin:0 auto;
 			width:70%;
+			@media screen and (min-width: $breakpoint-smartphone-min) and (max-width: $breakpoint-smartphone-max) {
+					width: 100%;
+  			}
+			
 			h4{
 				width: 25%;
 				padding: 0 0 10px 0;
@@ -122,7 +126,7 @@ $breakpoint-smartphone-max: 460px;
 				font-weight: 400;
 				text-transform: uppercase;
 				@media screen and (min-width: $breakpoint-smartphone-min) and (max-width: $breakpoint-smartphone-max) {
-				    width: 90%;
+				    width: 70%;
   				}
   				@media screen and (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet-max){
   					width: 40%
@@ -131,17 +135,13 @@ $breakpoint-smartphone-max: 460px;
 			p{
 				font-family: $raleway;
 				font-weight: 500;
+				@media screen and (min-width: $breakpoint-smartphone-min) and (max-width: $breakpoint-smartphone-max) {
+				    margin: 0 30px;
+  				}
 			}
-			.col-sm-12,.col-md-6,.col-lg-6{
+			.col-sm-12,.col-md-12,.col-lg-6{
 				overflow: hidden;
 				padding: 0;
-				.container{
-					display:flex;
-					flex-direction:column;
-					@media screen and (min-width: $breakpoint-smartphone-min) and (max-width: $breakpoint-smartphone-max){
-						flex-direction:column-reverse;
-					}
-				}
 				.carousel-inner{
 					.item{
 						img{
@@ -176,8 +176,8 @@ $breakpoint-smartphone-max: 460px;
 					width: 40%;
 					border-bottom: 1px solid #000;
 					@media screen and (min-width: $breakpoint-smartphone-min) and (max-width: $breakpoint-smartphone-max) {
-						top:20%;
-						left: 25%;
+						top: 25%;
+    					left: 28%;
 					}
 					h6{
 						font-family: $muli;
@@ -203,6 +203,10 @@ $breakpoint-smartphone-max: 460px;
 					font-size: 1.5rem;
 					text-align: left;
 					margin: 20px;
+					@media screen and (min-width: $breakpoint-smartphone-min) and (max-width: $breakpoint-smartphone-max) {
+						margin:20px 0;
+						text-align: center;
+			  		}
 				}
 				ul{
 					text-align: left;
