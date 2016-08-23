@@ -3,8 +3,10 @@
 // Font Variables
 $raleway:'Raleway', sans-serif; 
 $muli: 'Muli', sans-serif;
-$breakpoint-tablet: 768px;
-$breakpoint-smartphone: 375px;
+$breakpoint-tablet-min: 768px;
+$breakpoint-tablet-max: 1024px;
+$breakpoint-smartphone-min: 320px;
+$breakpoint-smartphone-max: 460px;
 
 
 .site-wrapper{
@@ -77,6 +79,9 @@ $breakpoint-smartphone: 375px;
 			padding: 50px 0;
 			margin:0 auto;
 			width:70%;
+			@media screen and (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet-max){
+  				font-size: 1.3rem;
+  			}
 			h4{
 				width: 25%;
 				padding: 0 0 10px 0;
@@ -85,8 +90,11 @@ $breakpoint-smartphone: 375px;
 				font-family: $muli;
 				font-weight: 400;
 				text-transform: uppercase;
-				@media screen and (max-width: $breakpoint-smartphone) {
+				@media screen and (min-width: $breakpoint-smartphone-min) and (max-width: $breakpoint-smartphone-max) {
 				    width: 90%;
+  				}
+  				@media screen and (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet-max){
+  					width: 40%
   				}
 
 			}
@@ -113,17 +121,27 @@ $breakpoint-smartphone: 375px;
 				font-family: $muli;
 				font-weight: 400;
 				text-transform: uppercase;
-				@media screen and (max-width: $breakpoint-smartphone) {
+				@media screen and (min-width: $breakpoint-smartphone-min) and (max-width: $breakpoint-smartphone-max) {
 				    width: 90%;
+  				}
+  				@media screen and (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet-max){
+  					width: 40%
   				}
 			}
 			p{
 				font-family: $raleway;
 				font-weight: 500;
 			}
-			.col-sm-6,.col-md-6,.col-lg-6{
+			.col-sm-12,.col-md-6,.col-lg-6{
 				overflow: hidden;
 				padding: 0;
+				.container{
+					display:flex;
+					flex-direction:column;
+					@media screen and (min-width: $breakpoint-smartphone-min) and (max-width: $breakpoint-smartphone-max){
+						flex-direction:column-reverse;
+					}
+				}
 				.carousel-inner{
 					.item{
 						img{
@@ -157,7 +175,7 @@ $breakpoint-smartphone: 375px;
 					margin: 0 auto;
 					width: 40%;
 					border-bottom: 1px solid #000;
-					@media screen and (max-width: $breakpoint-smartphone) {
+					@media screen and (min-width: $breakpoint-smartphone-min) and (max-width: $breakpoint-smartphone-max) {
 						top:20%;
 						left: 25%;
 					}
@@ -165,7 +183,7 @@ $breakpoint-smartphone: 375px;
 						font-family: $muli;
 						font-weight: 300;
 						font-size: 2rem;
-						@media screen and (max-width: $breakpoint-smartphone) {
+						@media screen and (min-width: $breakpoint-smartphone-min) and (max-width: $breakpoint-smartphone-max) {
 							 font-size: 1rem;
 							 margin-left: 0;
 			  			}
@@ -174,7 +192,7 @@ $breakpoint-smartphone: 375px;
 						font-family: $muli;
 						font-weight: 300;
 						font-size: 4rem;
-						@media screen and (max-width: $breakpoint-smartphone) {
+						@media screen and (min-width: $breakpoint-smartphone-min) and (max-width: $breakpoint-smartphone-max) {
 							 font-size: 2rem;
 			  			}
 					}
@@ -258,7 +276,7 @@ $breakpoint-smartphone: 375px;
 			margin:0 auto;
 			width:70%;
 			z-index: 999;
-			@media screen and (max-width: $breakpoint-smartphone) {
+			@media screen and (min-width: $breakpoint-smartphone-min) and (max-width: $breakpoint-smartphone-max) {
 				padding: 25px 0;
 				line-height: 2.3;
 				width: 90%
@@ -296,7 +314,7 @@ $breakpoint-smartphone: 375px;
 				font-family: $muli;
 				font-weight: 400;
 				text-transform: uppercase;
-				@media screen and (max-width: $breakpoint-smartphone) {
+				@media screen and (min-width: $breakpoint-smartphone-min) and (max-width: $breakpoint-smartphone-max) {
 				    width: 90%;
   				}
 			}
@@ -317,7 +335,7 @@ $breakpoint-smartphone: 375px;
 			img{
 				margin: 5px auto;
 				float: left;
-				@media screen and (max-width: $breakpoint-smartphone) {
+				@media screen and (min-width: $breakpoint-smartphone-min) and (max-width: $breakpoint-smartphone-max) {
 				    width: 100%;
   				}
 			}
@@ -350,7 +368,7 @@ $breakpoint-smartphone: 375px;
 	    	width: 80%;
 	    	padding:7px;
 	    	border-radius: 4px;
-	    	@media screen and (max-width: $breakpoint-smartphone) {
+	    	@media screen and (min-width: $breakpoint-smartphone-min) and (max-width: $breakpoint-smartphone-max) {
 	    		width: 100%
 	    	}
 	    }
@@ -364,7 +382,7 @@ $breakpoint-smartphone: 375px;
 	    .footer{
 	    	margin-top: 50px;
 	    	text-align: center;
-	    	@media screen and (max-width: $breakpoint-smartphone) {
+	    	@media screen and (min-width: $breakpoint-smartphone-min) and (max-width: $breakpoint-smartphone-max) {
 	    		margin-top: 20px;
 	    	}
 	    	img{
@@ -373,7 +391,7 @@ $breakpoint-smartphone: 375px;
 	    }
 	}
 	.col-md-4{
-		@media screen and (max-width: $breakpoint-smartphone) {
+		@media screen and (min-width: $breakpoint-smartphone-min) and (max-width: $breakpoint-smartphone-max) {
 			margin-top: 20px;
 		}
 	}
