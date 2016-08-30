@@ -199,7 +199,6 @@
   left: 30%;
   margin: 0 auto;
   width: 40%;
-  border-bottom: 1px solid #000;
 }
 
 @media screen and (min-width: 320px) and (max-width: 460px) {
@@ -226,12 +225,24 @@
   font-family: "Muli", sans-serif;
   font-weight: 300;
   font-size: 4rem;
+  border-bottom: 1px solid #000;
 }
 
 @media screen and (min-width: 320px) and (max-width: 460px) {
   .site-wrapper .section2 .container .col-sm-12 .captions h5, .site-wrapper .section2 .container .col-md-12 .captions h5, .site-wrapper .section2 .container .col-lg-6 .captions h5 {
     font-size: 2rem;
   }
+}
+
+.site-wrapper .section2 .container .col-sm-12 .captions button.btn-galeria, .site-wrapper .section2 .container .col-md-12 .captions button.btn-galeria, .site-wrapper .section2 .container .col-lg-6 .captions button.btn-galeria {
+  text-transform: uppercase;
+  color: white;
+  font-family: "Muli", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  background-color: #000;
+  letter-spacing: 2px;
+  padding: 2px 30px;
 }
 
 .site-wrapper .section2 .container .col-sm-12 h6, .site-wrapper .section2 .container .col-md-12 h6, .site-wrapper .section2 .container .col-lg-6 h6 {
@@ -314,15 +325,32 @@
 }
 
 .site-wrapper .modal-dialog {
-  width: 80%;
+  width: 75%;
 }
 
-.site-wrapper .modal-dialog .carousel-inner .item img {
+.site-wrapper .modal-dialog .modal-content {
+  background-color: #000;
+}
+
+.site-wrapper .modal-dialog .modal-content button.btn-default {
+  font-size: 1.1rem;
+  font-family: "Muli", sans-serif;
+  font-weight: 500;
+  color: white;
+  padding: 8px 35px;
+  border: 1px solid white;
+  border-radius: 0;
+  letter-spacing: 2px;
+  background-color: #000;
+  text-transform: uppercase;
+}
+
+.site-wrapper .modal-dialog .modal-content .carousel-inner .item img {
   width: 100%;
   margin: 0;
 }
 
-.site-wrapper .modal-dialog .carousel-inner .item img .img-responsive {
+.site-wrapper .modal-dialog .modal-content .carousel-inner .item img .img-responsive {
   width: 100%;
 }
 

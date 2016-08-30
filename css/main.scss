@@ -164,7 +164,6 @@ $breakpoint-smartphone-max: 460px;
 					left:30%;
 					margin: 0 auto;
 					width: 40%;
-					border-bottom: 1px solid #000;
 					@media screen and (min-width: $breakpoint-smartphone-min) and (max-width: $breakpoint-smartphone-max) {
 						top: 25%;
     					left: 28%;
@@ -182,9 +181,20 @@ $breakpoint-smartphone-max: 460px;
 						font-family: $muli;
 						font-weight: 300;
 						font-size: 4rem;
+						border-bottom: 1px solid #000;
 						@media screen and (min-width: $breakpoint-smartphone-min) and (max-width: $breakpoint-smartphone-max) {
 							 font-size: 2rem;
 			  			}
+					}
+					button.btn-galeria{
+						text-transform: uppercase;
+						color: white;
+						font-family: $muli;
+						font-weight: 500;
+						font-size: 1.2rem;
+						background-color: #000;
+						letter-spacing:2px;
+						padding: 2px 30px;
 					}
 				}
 				h6{
@@ -258,14 +268,29 @@ $breakpoint-smartphone-max: 460px;
 		}
 	}
 	.modal-dialog{
-		width: 80%;
-		.carousel-inner{
-			.item{
-				img{
-					width: 100%;
-					margin: 0;
-					.img-responsive{
-						width: 100%
+		width: 75%;
+		.modal-content{
+			background-color: #000;
+			button.btn-default{
+				font-size: 1.1rem;
+				font-family: $muli;
+				font-weight: 500;
+				color: white;
+				padding: 8px 35px;
+				border:1px solid white;
+				border-radius: 0;
+				letter-spacing: 2px;
+				background-color: #000;
+				text-transform: uppercase;
+			}
+			.carousel-inner{
+				.item{
+					img{
+						width: 100%;
+						margin: 0;
+						.img-responsive{
+							width: 100%
+						}
 					}
 				}
 			}
