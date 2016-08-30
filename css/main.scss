@@ -142,13 +142,6 @@ $breakpoint-smartphone-max: 460px;
 			.col-sm-12,.col-md-12,.col-lg-6{
 				overflow: hidden;
 				padding: 0;
-				.carousel-inner{
-					.item{
-						img{
-							width: 100%;
-						}
-					}
-				}	
 				img.foto-75{
 					-webkit-filter: blur(3px);
 		  			-moz-filter: blur(3px);
@@ -164,9 +157,6 @@ $breakpoint-smartphone-max: 460px;
 						-webkit-filter: blur(0);
 						filter: blur(0);
 					}
-				}
-				.thumbnail{
-					border: 0;
 				}
 				.captions{
 					position: absolute;
@@ -262,6 +252,20 @@ $breakpoint-smartphone-max: 460px;
 								filter:none;
 							}
 						}
+					}
+				}
+			}
+		}
+	}
+	.modal-dialog{
+		width: 80%;
+		.carousel-inner{
+			.item{
+				img{
+					width: 100%;
+					margin: 0;
+					.img-responsive{
+						width: 100%
 					}
 				}
 			}
