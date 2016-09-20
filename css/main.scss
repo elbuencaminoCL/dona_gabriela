@@ -358,15 +358,33 @@ $breakpoint-smartphone-max: 460px;
 		padding: 30px;
 		width: 100%;
 		background-color:#91262A;
-		.col-md-6{
-			text-align: right;
-			color:#FFF;
+		.col-md-4,col-sm-8{
+			a{
+				text-transform: uppercase;
+				border: 1px solid #FFF;
+				text-align: left;
+				padding: 5px 25px;
+				margin: 10px 0;
+				@media screen and (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet-max){
+  					text-align: right;
+  					float: right;
+  				}
+			}
+		}
+		.col-md-5,col-sm-8{
+			@media screen and (min-width: $breakpoint-smartphone-min) and (max-width: $breakpoint-smartphone-max){
+  				margin-top: 25px;
+  			}
 			p{
+				text-align: right;
 				color:#FFF;
 				margin:0;
 			}
+		}
+		.col-md-3,col-sm-4{
 			img{
-				margin: 5px auto;
+				margin: 0 auto 25px auto;
+				text-align: left;
 				float: left;
 				@media screen and (min-width: $breakpoint-smartphone-min) and (max-width: $breakpoint-smartphone-max) {
 				    width: 100%;

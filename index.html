@@ -265,10 +265,13 @@
         </div>
         <!-- Fin seccion4-->
       <footer class="row">
-        <div class="col-md-6">
+        <div class="col-md-3 col-sm-4">
           <img src="img/logo.jpg">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4 col-sm-8">
+	        <a href="#" class="btn-reg">Descargar Reglamento</a>
+        </div>
+        <div class="col-md-5 col-sm-8">
           <p>Av. Las Delicias 80, Vicuña, Valle del Elqui, Chile.</p>
           <p>info@condominiodonagabriela.cl</p>
         </div>
@@ -368,6 +371,17 @@ $(document).ready(function() {
   }
 );
 });
+</script>
+
+<script>
+  $(document).ready(function() {  
+  		 $("#modal-carousel").swiperight(function() {  
+    		  $(this).carousel('prev');  
+	    		});  
+		   $("#modal-carousel").swipeleft(function() {  
+		      $(this).carousel('next');  
+	   });  
+	});  
 </script>
   </body>
 </html>
