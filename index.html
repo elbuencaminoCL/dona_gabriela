@@ -36,11 +36,13 @@
         </div>
 
 
-        <div id="modal-contact" class="modal contact-wrapper" role="dialog" style="display: none">
+        <div id="modal-contact" class="modal" role="dialog" style="display: none">
           <div class="modal-dialog">
-            <div class="modal-">
+            <div class=" contact-wrapper">
               <div class="container">
-                <h1>Contacto</h1>
+
+                <button class="close" type="button" data-dismiss="modal">×</button>
+                <h1 class="modal__contact__title">Contacto</h1>
 
                 <div class="row">
                   <div class="col-md-8">
@@ -301,7 +303,7 @@
               <p>
                 UBICADOS A PASOS DEL CENTRO, CUENTAN CON LA MEJOR INFRAESTRUCTURA PARA VIVIR EN COMODIDAD, ARMONÍA Y SEGURIDAD.
               </p>
-              <a href="contacto.html">CONSULTA AHORA</a>
+              <a data-toggle="modal" data-target="#modal-contact" href="#">CONSULTA AHORA</a>
             </div>   
           </div>
         </div>

@@ -328,6 +328,10 @@
   width: 75%;
 }
 
+.contact-wrapper .container .modal__contact__title {
+  margin: 6rem auto;
+}
+
 .site-wrapper .modal-dialog .modal-content {
   background-color: #000;
 }
@@ -343,6 +347,19 @@
   letter-spacing: 2px;
   background-color: #000;
   text-transform: uppercase;
+}
+
+#modal-contact .container {
+  width: 100%;
+}
+#modal-contact .close {
+  color: white;
+  opacity: 1;
+  margin-top: 1rem;
+  font-size: 32px;
+}
+#modal-contact .contact-wrapper .container .footer {
+  margin-top: 0;
 }
 
 .site-wrapper .modal-dialog .modal-content .carousel-inner .item img {
@@ -473,7 +490,6 @@
 
 .contact-wrapper {
   background: url(../img/bg-contacto.jpg) center top no-repeat;
-  display: table;
   width: 100%;
   height: 100%;
   /* For at least Firefox */
