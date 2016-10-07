@@ -269,6 +269,12 @@ $breakpoint-smartphone-max: 460px;
 	}
 	.modal-dialog{
 		width: 75%;
+		@media screen and (min-width: $breakpoint-smartphone-min) and (max-width: $breakpoint-smartphone-max) {
+			width: 95%;	
+		}
+		@media screen and (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet-max) {
+			width: 95%;	
+		}
 		.modal-content{
 			background-color: #000;
 			button.btn-default{
@@ -292,6 +298,11 @@ $breakpoint-smartphone-max: 460px;
 							width: 100%
 						}
 					}
+				}
+			}
+			.modal-dialog{
+				@media screen and (min-width: $breakpoint-smartphone-min) and (max-width: $breakpoint-smartphone-max) {
+					margin: 10px auto;
 				}
 			}
 		}
