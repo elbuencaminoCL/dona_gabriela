@@ -34,6 +34,57 @@
             </p>
           </div>
         </div>
+
+
+        <div id="modal-contact" class="modal" role="dialog" style="display: none">
+          <div class="modal-dialog">
+            <div class=" contact-wrapper">
+              <div class="container">
+
+                <button class="close" type="button" data-dismiss="modal">×</button>
+                <h1 class="modal__contact__title">Contacto</h1>
+
+                <div class="row">
+                  <div class="col-md-8 col-md-offset-3">
+                  
+                    <p>Ponte en contacto con nosotros:</p>
+                    <form action="https://formspree.io/claudio@elbuencamino.com" method="POST">
+                      <input type="text" name="nombre" placeholder="Tu Nombre">
+                      <input type="email" name="email" placeholder="Tu E-Mail">
+                      <input type="text" name="telefono" placeholder="Tu Teléfono">
+                      <textarea rows="4" name="mensaje" placeholder="Tu Mensaje"></textarea>
+                      <input type="submit" class="btn btn-lg btn-primary btn-block" value="Enviar">
+                    </form>
+                  </div>
+                  <div class="col-md-4">
+                  
+                   <!--  <p>
+                      También puedes contactarnos en:<br/><br/>
+                      Vicuña<br/>
+                    Cordovez 540, local 104<br/>
+                    Edificio Comercial Buale<br/>
+                    Fono: +56 51 222 2625<br/>
+                    Cel: +569 9219 5871<br/><br/>
+
+                    Santiago<br/>
+                    Avenida Tobalaba 4033, <br/>
+                    Oficina A Providencia.<br/>
+                    Fono: +56 2 2277 74 41 <br/>
+                    <img src="img/mail.svg" /> info@condominiodonagabriela.cl 
+                  </p> -->
+                  </div>
+                </div>
+                <div class="row footer">
+                  <p>Síguenos en</p>
+                  <img src="img/twitter.svg"><img src="img/facebook.svg">
+                  <p>Inmobiliaria Santa Mónica S.A. ©</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
         <div class="nav">
           <div class="inner">
             <nav class="navbar navbar-default">
@@ -152,7 +203,7 @@
                 <!--<h5>$550.000</h5>-->
                 <ul>
                   <li><img src="img/3D.png"></li>
-                  <li><img src="img/2B.png"></li>
+                  <li><img src="img/2-B.png"></li>
                   <li><img src="img/120mt.png"></li>
                   <li><img src="img/1.png"></li>
                 </ul>
@@ -252,7 +303,7 @@
               <p>
                 UBICADOS A PASOS DEL CENTRO, CUENTAN CON LA MEJOR INFRAESTRUCTURA PARA VIVIR EN COMODIDAD, ARMONÍA Y SEGURIDAD.
               </p>
-              <a href="contacto.html">CONSULTA AHORA</a>
+              <a data-toggle="modal" data-target="#modal-contact" href="#">CONSULTA AHORA</a>
             </div>   
           </div>
         </div>
@@ -271,13 +322,13 @@
         </div>
         <!-- Fin seccion4-->
       <footer class="row">
-        <div class="col-md-3 col-sm-4">
+        <div class="col-md-4 text-left">
           <img src="img/logo.jpg">
         </div>
-        <div class="col-md-4 col-sm-8">
-	        <a href="#" class="btn-reg">Descargar Reglamento</a>
+        <div class="col-md-4">
+	        <a href="reglamento_interno.pdf" class="btn-reg">Descargar Reglamento</a>
         </div>
-        <div class="col-md-5 col-sm-8">
+        <div class="col-md-4 text-right">
           <p>Av. Las Delicias 80, Vicuña, Valle del Elqui, Chile.</p>
           <p>info@condominiodonagabriela.cl</p>
         </div>
@@ -387,7 +438,24 @@ $(document).ready(function() {
 		   $("#modal-carousel").swipeleft(function() {  
 		      $(this).carousel('next');  
 	   });  
-	});  
+
+        $("#modal-contact").modal("show");
+	});
+
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
 </script>
   </body>
 </html>
