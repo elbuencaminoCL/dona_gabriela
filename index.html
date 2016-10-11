@@ -432,14 +432,17 @@ $(document).ready(function() {
 
 <script>
   $(document).ready(function() {  
-  		 $("#modal-carousel").swiperight(function() {  
-    		  $(this).carousel('prev');  
-	    		});  
-		   $("#modal-carousel").swipeleft(function() {  
-		      $(this).carousel('next');  
-	   });  
-
-        $("#modal-contact").modal("show");
+  		$(".carousel").swipe({
+		  swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+		
+		    if (direction == 'left') $(this).carousel('next');
+		    if (direction == 'right') $(this).carousel('prev');
+		
+		  },
+		  allowPageScroll:"vertical"
+		
+		});
+		$("#modal-contact").modal("show");
 	});
 
   $(function() {
