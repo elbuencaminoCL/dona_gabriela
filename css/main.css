@@ -490,8 +490,7 @@
 }
 
 .contact-wrapper {
-  background: url(../img/bg-contacto.jpg) center top no-repeat;
-  display: table;
+  background:url(../img/Condominio-Islas-del-Mediterraneo-La-Serena.jpg) center top no-repeat;
   width: 100%;
   height: 100%;
   /* For at least Firefox */
@@ -515,12 +514,16 @@
 }
 
 .contact-wrapper .container input, .contact-wrapper .container textarea {
+  color: black;
   font-family: "Raleway", sans-serif;
   display: block;
   margin-bottom: 20px;
   width: 80%;
   padding: 7px;
   border-radius: 4px;
+}
+.contact-wrapper .container input[type="submit"] {
+  color: white;
 }
 
 @media screen and (min-width: 320px) and (max-width: 460px) {
